@@ -27,4 +27,15 @@ fn main() {
     // String を &str にするには as_str()
     a += x.as_str();
     println!("{}", a); // => abcdef1
+
+    // push_strでも連結できる
+    let mut s = String::from("やあ");
+    s.push_str("こんにちわ");
+    println!("{}", s);
+
+    // pushでも連結できる
+    let mut s2 = String::from("や");
+    // pushは1文字(char)のみ(charなのでシングルクオート)
+    s2.push('あ');
+    println!("{}", s2);
 }
